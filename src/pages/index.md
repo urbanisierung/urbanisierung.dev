@@ -5,17 +5,15 @@ sections:
     component: HeroBlock
     type: heroblock
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+      Welcome!
   - section_id: about
     component: ContentBlock
     type: contentblock
     title: About
     content: >-
-      This is the "about" excerpt. It can be used to provide a paragraph about
-      yourself that people can read on the homepage to get a sense of who you
-      are. There also exists a dedicated about page where you can write more
-      about yourself for those who are interested.
+      I've been in love with technology ever since I could remember.
+      Started in the early 90s with Turbo Pascal, I quickly realized that I was a software engineer.
+      I still love to code, but have focused on building teams and sharing my experience over the last few years.
     actions:
       - label: Contact Me
         url: /contact
