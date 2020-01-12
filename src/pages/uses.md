@@ -7,6 +7,8 @@ menus:
 template: page
 ---
 
+ispired by https://uses.tech/
+
 ## Hardware
 
 * Notebook: [Lenovo Carbon X1 (6th gen)](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/22TP2TXX16G)
