@@ -7,7 +7,7 @@ menus:
 template: page
 ---
 
-ispired by https://uses.tech/
+inspired by https://uses.tech/
 
 ## Hardware
 
