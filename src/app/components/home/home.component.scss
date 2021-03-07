@@ -1,0 +1,15 @@
+.helloworld {
+  font-size: 1200%;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 80%;
+  //   width: 80%;
+  //   left: 10%;
+  //   right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .helloworld {
+    font-size: 400%;
+  }
+}
