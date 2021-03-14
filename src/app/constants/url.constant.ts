@@ -1,0 +1,1 @@
+export const DEV_TO_ARTICLES = 'https://dev.to/api/articles?username=urbanisierung'

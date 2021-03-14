@@ -13,14 +13,19 @@ import { HighlightModule } from 'ngx-highlightjs'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HomeComponent } from './components/home/home.component'
-import { LoadingComponent } from './components/loading/loading.component'
+import { LoadingComponent } from './components/loading/loading.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SocialIconComponent } from './components/social-icon/social-icon.component';
+import { SocialComponent } from './components/social/social.component';
+import { ArticleComponent } from './components/article/article.component';
+import { ArticlesComponent } from './components/articles/articles.component'
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
 }
 
 @NgModule({
-  declarations: [AppComponent, LoadingComponent, HomeComponent],
+  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent],
   imports: [
     CommonModule,
     FormsModule,

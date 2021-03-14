@@ -110,6 +110,8 @@ html {
 
 /* ~~~~~~~~~~~~ CSS CLASSES ~~~~~~~~~~~~ */
 
+/* ============ GRID ============ */
+
 @media only screen and (max-width: 600px) {
   .my-grid {
     display: grid;
@@ -135,3 +137,23 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.is-header {
+  grid-column: social / 3;
+  grid-row: header;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.is-social {
+  grid-column: social;
+  grid-row: main;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+/* ============ GRID ============ */
