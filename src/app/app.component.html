@@ -1,5 +1,5 @@
 <div class="my-grid">
-  <div class="is-social">
+  <div *ngIf="!screensizeService.isSmallWidth" class="is-social">
     <app-social></app-social>
   </div>
   <div class="is-header">

@@ -112,30 +112,12 @@ html {
 
 /* ============ GRID ============ */
 
-@media only screen and (max-width: 600px) {
-  .my-grid {
-    display: grid;
-    grid-template-columns: [main] auto;
-    grid-template-rows: [header] 50px [main] auto;
-    width: 100vw;
-    height: 100vh;
-  }
-}
-
 .my-grid {
   display: grid;
   grid-template-columns: [social] 20% [main] auto [contact] 20%;
   grid-template-rows: [header] 50px [main] auto;
   width: 100vw;
   height: 100vh;
-}
-
-.is-main {
-  grid-column: main;
-  grid-row: main;
-  overflow-y: scroll;
-  height: 100%;
-  width: 100%;
 }
 
 .is-header {
@@ -145,6 +127,33 @@ html {
   width: 100%;
   align-self: center;
   justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-grid {
+    display: grid;
+    grid-template-columns: [main] 100%;
+    grid-template-rows: [header] 50px [main] auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .is-header {
+    grid-column: main;
+    grid-row: header;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.is-main {
+  grid-column: main;
+  grid-row: main;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
 }
 
 .is-social {
