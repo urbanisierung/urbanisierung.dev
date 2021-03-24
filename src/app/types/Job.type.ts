@@ -3,6 +3,7 @@ export interface Job {
   company: {
     name: string
     url: string
+    logo?: string
   }
   from: string
   to: string

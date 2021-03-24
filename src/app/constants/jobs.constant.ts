@@ -6,6 +6,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Camunda',
       url: 'https://www.camunda.com/',
+      logo: 'assets/img/companies/camunda.png',
     },
     from: 'Jul 2019',
     to: 'present',
@@ -21,6 +22,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Sick AG',
       url: 'https://www.sick.com/',
+      logo: 'assets/img/companies/sick.png',
     },
     from: 'Sep 2017',
     to: 'Jun 2019',
@@ -38,6 +40,7 @@ export const JOBS: Job[] = [
     company: {
       name: '1&1 IONOS',
       url: 'https://www.ionos.com/',
+      logo: 'assets/img/companies/ionos.png',
     },
     from: 'Nov 2014',
     to: 'Aug 2017',
@@ -56,6 +59,7 @@ export const JOBS: Job[] = [
     company: {
       name: '1&1 IONOS',
       url: 'https://www.ionos.com/',
+      logo: 'assets/img/companies/ionos.png',
     },
     from: 'Aug 2011',
     to: 'Oct 2014',
@@ -72,6 +76,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'FZI',
       url: 'https://www.fzi.de/en/home/',
+      logo: 'assets/img/companies/fzi.png',
     },
     from: 'Jan 2011',
     to: 'Jul 2011',
@@ -87,6 +92,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Camos',
       url: 'https://www.camos.de/en/',
+      logo: 'assets/img/companies/camos.png',
     },
     from: 'May 2009',
     to: 'Dec 2010',
@@ -96,6 +102,31 @@ export const JOBS: Job[] = [
       'Building PoCs and customizing CAMOS core products to fit customers needs',
     ],
     tech: ['camos CPQ'],
+  },
+  {
+    title: 'Computer Science',
+    company: {
+      name: 'Karlsruhe Institute of Technology',
+      url: 'https://www.kit.edu/english/',
+      logo: 'assets/img/companies/kit.png',
+    },
+    from: 'Oct 2003',
+    to: 'Apr 2009',
+    duration: '5 years, 7 months',
+    description: [
+      'Graduated with Diploma / Master of Science',
+      'Master thesis in health care',
+      'Specialization in information systems and telematics',
+      'Tutor for Bachelor students',
+    ],
+    tech: [
+      'Java',
+      'Prolog',
+      'Haskell',
+      'Workflow Management',
+      'Information Systems',
+      'Telematics',
+    ],
   },
 ]
 

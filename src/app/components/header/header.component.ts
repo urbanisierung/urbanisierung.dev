@@ -6,5 +6,16 @@ import { Component } from '@angular/core'
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  public items = [
+    {
+      name: 'Experience',
+      route: 'experience',
+    },
+    {
+      name: 'Bla bla...',
+      route: 'blog',
+    },
+  ]
+
   constructor() {}
 }
