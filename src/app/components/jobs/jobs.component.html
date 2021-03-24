@@ -1,0 +1,16 @@
+<span
+  *ngIf="!screensizeService.isSmallWidth && !screensizeService.isMediumWidth"
+>
+  <div class="columns" *ngFor="let jobGroup of jobs">
+    <div class="column" *ngFor="let job of jobGroup">
+      <app-job [job]="job" *ngIf="!isDummy(job)"></app-job>
+    </div>
+  </div>
+</span>
+<span *ngIf="screensizeService.isSmallWidth || screensizeService.isMediumWidth">
+  <span *ngFor="let jobGroup of jobs">
+    <span *ngFor="let job of jobGroup">
+      <app-job [job]="job" *ngIf="!isDummy(job)"></app-job>
+    </span>
+  </span>
+</span>

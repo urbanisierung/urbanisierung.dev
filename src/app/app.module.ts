@@ -18,14 +18,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 import { SocialComponent } from './components/social/social.component';
 import { ArticleComponent } from './components/article/article.component';
-import { ArticlesComponent } from './components/articles/articles.component'
+import { ArticlesComponent } from './components/articles/articles.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { JobComponent } from './components/job/job.component';
+import { JobsComponent } from './components/jobs/jobs.component'
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
 }
 
 @NgModule({
-  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent],
+  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent],
   imports: [
     CommonModule,
     FormsModule,

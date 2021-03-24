@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img
+            src="https://bulma.io/images/placeholders/96x96.png"
+            alt="Placeholder image"
+          />
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title">
+          {{ job.title }}
+        </p>
+        <p class="subtitle">
+          <a href="{{ job.company.url }}" target="_blank">{{
+            job.company.name
+          }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card-content">
+    <div class="content">
+      <p *ngFor="let item of job.description" [innerHTML]="item"></p>
+    </div>
+    <div class="content">
+      <span class="tag is-light" *ngFor="let tag of job.tech">{{ tag }}</span>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <p class="card-footer-item">
+      <span> {{ job.from }} - {{ job.to }} </span>
+    </p>
+    <p class="card-footer-item">
+      <span>{{ job.duration }}</span>
+    </p>
+  </footer>
+</div>
