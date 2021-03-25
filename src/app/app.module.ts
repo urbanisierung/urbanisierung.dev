@@ -22,14 +22,20 @@ import { ArticlesComponent } from './components/articles/articles.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { JobComponent } from './components/job/job.component';
 import { JobsComponent } from './components/jobs/jobs.component';
-import { HeaderMenuItemComponent } from './components/header-menu-item/header-menu-item.component'
+import { HeaderMenuItemComponent } from './components/header-menu-item/header-menu-item.component';
+import { JobCardComponent } from './components/job/job-card/job-card.component';
+import { JobDescriptionComponent } from './components/job/job-description/job-description.component';
+import { TechTagComponent } from './components/job/tech-tag/tech-tag.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { SideprojectComponent } from './components/sideproject/sideproject.component';
+import { SideprojectsComponent } from './components/sideprojects/sideprojects.component'
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
 }
 
 @NgModule({
-  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent, HeaderMenuItemComponent],
+  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent, HeaderMenuItemComponent, JobCardComponent, JobDescriptionComponent, TechTagComponent, ContactComponent, SideprojectComponent, SideprojectsComponent],
   imports: [
     CommonModule,
     FormsModule,

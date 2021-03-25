@@ -11,3 +11,8 @@ export interface Job {
   description: string[]
   tech: string[]
 }
+
+export interface JobWithAlignment {
+  job: Job
+  left: boolean
+}

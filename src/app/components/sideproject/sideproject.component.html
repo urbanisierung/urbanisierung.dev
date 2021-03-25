@@ -1,0 +1,21 @@
+<div class="columns is-vcentered" style="margin-top: 2em;">
+  <div class="column is-6">
+    <h1 class="title">
+      {{ sideproject.name }}
+    </h1>
+    <p>{{ sideproject.description }}</p>
+    <app-social-icon
+      *ngFor="let socialConnect of sideproject.urls"
+      [socialConnect]="socialConnect"
+    ></app-social-icon>
+  </div>
+  <div class="column is-6" style="text-align: center;">
+    <div class="sideproject-image">
+      <img
+        [src]="sideproject.image"
+        alt="{{ sideproject.name }}"
+        class="intro-image"
+      />
+    </div>
+  </div>
+</div>

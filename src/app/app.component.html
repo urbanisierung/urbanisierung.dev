@@ -1,11 +1,12 @@
 <div class="my-grid">
-  <div *ngIf="!screensizeService.isSmallWidth" class="is-social">
-    <app-social></app-social>
-  </div>
   <div class="is-header">
     <app-header></app-header>
   </div>
   <div class="is-main">
-    <router-outlet></router-outlet>
+    <section class="section">
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
   </div>
 </div>

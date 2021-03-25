@@ -1,8 +1,42 @@
-<div class="columns is-mobile">
-  <div class="column" *ngFor="let item of items">
-    <app-header-menu-item
-      [name]="item.name"
-      [route]="item.route"
-    ></app-header-menu-item>
+<nav
+  class="navbar is-background-blur"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="assets/img/logo.png" width="28" height="28" />
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
-</div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a
+        class="navbar-item"
+        *ngFor="let item of items"
+        [routerLink]="item.route"
+      >
+        {{ item.name }}
+      </a>
+    </div>
+    <div class="navbar-end">
+      <app-social-icon
+        *ngFor="let socialConnect of socialConnects"
+        [socialConnect]="socialConnect"
+      ></app-social-icon>
+      <div style="width: 50px;"></div>
+    </div>
+  </div>
+</nav>

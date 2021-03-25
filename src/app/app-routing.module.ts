@@ -1,11 +1,27 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { ArticlesComponent } from './components/articles/articles.component'
 import { HomeComponent } from './components/home/home.component'
+import { JobsComponent } from './components/jobs/jobs.component'
+import { SideprojectsComponent } from './components/sideprojects/sideprojects.component'
+import { Route } from './constants/route.enum'
 
 const routes: Routes = [
   {
-    path: '',
+    path: Route.HOME,
     component: HomeComponent,
+  },
+  {
+    path: Route.EXPERIENCE,
+    component: JobsComponent,
+  },
+  {
+    path: Route.BLOG,
+    component: ArticlesComponent,
+  },
+  {
+    path: Route.SIDEPROJECTS,
+    component: SideprojectsComponent,
   },
 ]
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
+import { JOBS } from '../../constants/jobs.constant'
 import { ScreensizeService } from '../../services/screensize.service'
-import { DUMMY_JOB, JOBS } from '../../constants/jobs.constant'
-import { Job } from '../../types/Job.type'
+import { JobWithAlignment } from '../../types/Job.type'
 
 @Component({
   selector: 'app-jobs',
@@ -9,29 +9,26 @@ import { Job } from '../../types/Job.type'
   styleUrls: ['./jobs.component.scss'],
 })
 export class JobsComponent implements OnInit {
-  public jobs: Job[][] = []
+  public jobsWithAlignment: JobWithAlignment[] = []
 
   constructor(public screensizeService: ScreensizeService) {}
 
   ngOnInit(): void {
     let index = 1
     let lastJob
+    let isLeft = true
 
     for (const job of JOBS) {
       if (!lastJob || lastJob !== job.company.name) {
         index++
       }
       if (index % 2 === 0) {
-        this.jobs.push([job, DUMMY_JOB])
+        isLeft = true
       } else {
-        this.jobs.push([DUMMY_JOB, job])
+        isLeft = false
       }
+      this.jobsWithAlignment.push({ job, left: isLeft })
       lastJob = job.company.name
     }
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  isDummy(job: Job) {
-    return job.title === DUMMY_JOB.title
   }
 }

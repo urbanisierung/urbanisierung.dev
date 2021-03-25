@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core'
-import { Job } from '../../types/Job.type'
+import { ScreensizeService } from '../../services/screensize.service'
+import { JobWithAlignment } from '../../types/Job.type'
 
 @Component({
   selector: 'app-job',
@@ -8,7 +9,7 @@ import { Job } from '../../types/Job.type'
 })
 export class JobComponent {
   @Input()
-  job: Job
+  jobWithAlignment: JobWithAlignment
 
-  constructor() {}
+  constructor(public screensizeService: ScreensizeService) {}
 }
