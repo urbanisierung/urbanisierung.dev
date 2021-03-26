@@ -3,6 +3,12 @@
     <h1 class="title">
       {{ sideproject.name }}
     </h1>
+    <p style="margin-bottom: 1em;">
+      <app-tech-tag
+        *ngFor="let tag of sideproject.tech"
+        [tag]="tag"
+      ></app-tech-tag>
+    </p>
     <p>{{ sideproject.description }}</p>
     <app-social-icon
       *ngFor="let socialConnect of sideproject.urls"

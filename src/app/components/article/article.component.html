@@ -1,34 +1,24 @@
-<div class="card my-card">
-  <div class="card-image" *ngIf="article.cover_image">
-    <figure class="image">
-      <img [src]="article.cover_image" [alt]="article.title" />
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="image is-48x48">
-          <img
-            [src]="article.user.profile_image_90"
-            [alt]="article.user.username"
-            class="is-rounded"
-          />
-        </figure>
-      </div>
-      <div class="media-content">
-        <p class="title is-4">
-          <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+<div class="box is-clickable" style="margin-bottom: 1em;" (click)="open()">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img
+          [src]="article.cover_image"
+          [alt]="article.user.username"
+          *ngIf="article.cover_image"
+        />
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>{{ article.title }}</strong
+          ><br />
+          <small>{{ article.published_at | date: 'MMMM d, y' }}</small>
+          <br />
+          {{ article.description }}
         </p>
-        <p class="subtitle is-6">@{{ article.user.username }}</p>
       </div>
     </div>
-
-    <div class="content">
-      {{ article.description }}
-      <br />
-      <span class="is-size-7">
-        {{ article.published_at | date: 'short' }}
-      </span>
-    </div>
-  </div>
+  </article>
 </div>

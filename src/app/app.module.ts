@@ -28,14 +28,17 @@ import { JobDescriptionComponent } from './components/job/job-description/job-de
 import { TechTagComponent } from './components/job/tech-tag/tech-tag.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SideprojectComponent } from './components/sideproject/sideproject.component';
-import { SideprojectsComponent } from './components/sideprojects/sideprojects.component'
+import { SideprojectsComponent } from './components/sideprojects/sideprojects.component';
+import { NewsComponent } from './components/news/news.component';
+import { NewsItemComponent } from './components/news/news-item/news-item.component';
+import { UsesComponent } from './components/uses/uses.component'
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
 }
 
 @NgModule({
-  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent, HeaderMenuItemComponent, JobCardComponent, JobDescriptionComponent, TechTagComponent, ContactComponent, SideprojectComponent, SideprojectsComponent],
+  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent, HeaderMenuItemComponent, JobCardComponent, JobDescriptionComponent, TechTagComponent, ContactComponent, SideprojectComponent, SideprojectsComponent, NewsComponent, NewsItemComponent, UsesComponent],
   imports: [
     CommonModule,
     FormsModule,

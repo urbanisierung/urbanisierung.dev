@@ -66,7 +66,9 @@
 // hover: #C66E80
 
 $highlight: #fff591;
-$my-primary: #106ed0;
+// $my-primary: #106ed0;
+$my-primary: #dacdff;
+
 $my-item-hover: #f8f8f8;
 $my-bg-color: #fefaf6;
 $my-dark-grey: #dfdfe2;
@@ -135,6 +137,12 @@ html {
   margin: auto;
 }
 
+.is-map-icon {
+  color: $my-grey;
+  margin-left: 0.4em;
+  margin-right: 0.2em;
+}
+
 .is-share-icon:hover {
   color: $primary;
   cursor: pointer;
@@ -152,19 +160,21 @@ html {
 
 .intro-title {
   font-size: 500%;
+  line-height: 95%;
 }
 .intro-subtitle {
   font-size: 150%;
+  margin-top: 0.5em;
 }
 
 /* ============ GRID ============ */
 
 .my-grid {
   display: grid;
-  grid-template-columns: [main] auto;
+  grid-template-columns: [main] 100%;
   grid-template-rows: [header] $navbar-height [main] auto;
   width: 100vw;
-  height: 100vh;
+  height: 99vh;
   overflow-y: hidden;
 }
 

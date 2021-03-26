@@ -1,3 +1,4 @@
+import { Tech } from '../constants/tech.enum'
 import { SocialConnect } from './SocialConnect.type'
 
 export interface SideProject {
@@ -5,6 +6,7 @@ export interface SideProject {
   image: string
   description: string
   year: number
-  tech: string[]
+  startTimestamp: number
+  tech: Tech[]
   urls: SocialConnect[]
 }

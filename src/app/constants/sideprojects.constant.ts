@@ -1,5 +1,6 @@
 import { SideProject } from '../types/SideProject.type'
 import { SocialProvider } from './SocialProvider.enum'
+import { Tech } from './tech.enum'
 
 export const SIDEPROJECTS: SideProject[] = [
   {
@@ -13,8 +14,9 @@ export const SIDEPROJECTS: SideProject[] = [
         url: 'https://findthenextvictim.netlify.app/',
       },
     ],
+    startTimestamp: 1615420800000,
     year: 2021,
-    tech: ['typescript', 'angular', 'netlify'],
+    tech: [Tech.TYPESCRIPT, Tech.ANGULAR, Tech.NETLIFY],
   },
   {
     name: 'Websiteshot',
@@ -35,16 +37,17 @@ export const SIDEPROJECTS: SideProject[] = [
         url: 'https://docs.websiteshot.app',
       },
     ],
+    startTimestamp: 1601856000000,
     year: 2020,
     tech: [
-      'typescript',
-      'angular',
-      'nodejs',
-      'firebase',
-      'serverless',
-      'newrelic',
-      'netlify',
-      'docusaurus',
+      Tech.TYPESCRIPT,
+      Tech.ANGULAR,
+      Tech.NODEJS,
+      Tech.FIREBASE,
+      Tech.SERVERLESS,
+      Tech.NEWRELIC,
+      Tech.NETLIFY,
+      Tech.DOCUSAURUS,
     ],
   },
   {
@@ -58,16 +61,17 @@ export const SIDEPROJECTS: SideProject[] = [
         url: 'https://restzeebe.app',
       },
     ],
+    startTimestamp: 1604275200000,
     year: 2020,
     tech: [
-      'typescript',
-      'angular',
-      'nodejs',
-      'firebase',
-      'serverless',
-      'netlify',
-      'camundacloud',
-      'zeebe',
+      Tech.TYPESCRIPT,
+      Tech.ANGULAR,
+      Tech.NODEJS,
+      Tech.FIREBASE,
+      Tech.SERVERLESS,
+      Tech.CAMUNDA,
+      Tech.NETLIFY,
+      Tech.DOCUSAURUS,
     ],
   },
   {
@@ -85,14 +89,15 @@ export const SIDEPROJECTS: SideProject[] = [
         url: 'https://sharu.io',
       },
     ],
+    startTimestamp: 1549411200000,
     year: 2019,
     tech: [
-      'solidity',
-      'ethereum',
-      'typescript',
-      'electron',
-      'angular',
-      'nodejs',
+      Tech.SOLIDITY,
+      Tech.ETHETERUM,
+      Tech.TYPESCRIPT,
+      Tech.ELECTRON,
+      Tech.ANGULAR,
+      Tech.NODEJS,
     ],
   },
 ]

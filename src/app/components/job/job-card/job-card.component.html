@@ -15,9 +15,17 @@
           {{ job.title }}
         </p>
         <p class="subtitle">
-          <a href="{{ job.company.url }}" target="_blank">@{{
-            job.company.name
-          }}</a>
+          <a href="{{ job.company.url }}" target="_blank"
+            >@{{ job.company.name }}</a
+          >
+          <span>
+            <fa-icon
+              [icon]="mapIcon"
+              aria-hidden="true"
+              class="is-map-icon"
+            ></fa-icon
+            >{{ job.location }}
+          </span>
         </p>
       </div>
     </div>
