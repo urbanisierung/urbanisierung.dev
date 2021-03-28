@@ -92,6 +92,7 @@ $family-sans-serif: 'Ubuntu', sans-serif;
 
 html {
   background-color: $my-bg-color;
+  font-size: 110%;
 }
 
 /* custom scrollbar */
@@ -125,6 +126,15 @@ html {
     rgba(235, 198, 116, 1) 100%
   );
   border-radius: 2em;
+}
+
+.my-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.mytitle {
+  text-align: center;
 }
 
 .is-share-wrapper {
