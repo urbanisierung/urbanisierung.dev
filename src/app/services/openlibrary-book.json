@@ -1,0 +1,34 @@
+{
+  "publishers": [
+    "Random House Large Print Publishing",
+    "Random House Large Print"
+  ],
+  "subtitle": "The Power of Knowing What You Don't Know",
+  "covers": [10470266],
+  "physical_format": "paperback",
+  "full_title": "Think Again The Power of Knowing What You Don't Know",
+  "last_modified": {
+    "type": "/type/datetime",
+    "value": "2020-10-07T13:51:47.097618"
+  },
+  "latest_revision": 1,
+  "key": "/books/OL30547670M",
+  "authors": [{ "key": "/authors/OL3272258A" }],
+  "source_records": ["amazon:0593395786"],
+  "title": "Think Again",
+  "notes": {
+    "type": "/type/text",
+    "value": "Source title: Think Again: The Power of Knowing What You Don't Know"
+  },
+  "number_of_pages": 563,
+  "created": {
+    "type": "/type/datetime",
+    "value": "2020-10-07T13:51:47.097618"
+  },
+  "isbn_13": ["9780593395783"],
+  "isbn_10": ["0593395786"],
+  "publish_date": "Feb 02, 2021",
+  "works": [{ "key": "/works/OL22484556W" }],
+  "type": { "key": "/type/edition" },
+  "revision": 1
+}

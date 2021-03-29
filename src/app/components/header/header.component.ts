@@ -12,5 +12,11 @@ export class HeaderComponent {
   public items: HeaderItem[] = HEADER_ITEMS
   public socialConnects = SOCIAL_CONNECT
 
+  opened: boolean = false
+
   constructor() {}
+
+  toggleMenu() {
+    this.opened = !this.opened
+  }
 }

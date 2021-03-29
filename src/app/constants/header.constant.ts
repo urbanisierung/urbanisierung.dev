@@ -3,8 +3,8 @@ import { Route } from './route.enum'
 
 export const HEADER_ITEMS: HeaderItem[] = [
   {
-    name: 'Hello!',
-    route: Route.HOME,
+    name: 'About',
+    route: Route.ABOUT,
   },
   {
     name: 'Work',

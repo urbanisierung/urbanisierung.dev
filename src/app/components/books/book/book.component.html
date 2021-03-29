@@ -1,0 +1,11 @@
+<div style="text-align: center;">
+  <a href="{{ book.url }}" target="_blank">
+    <img [src]="book.cover" alt="{{ book.title }}" style="max-width: 100px;"
+  /></a>
+  <p>{{ book.title }}</p>
+  <p class="is-size-7">
+    <span *ngFor="let author of book.authors; let last = last"
+      >{{ author }}<span *ngIf="!last">, </span></span
+    >
+  </p>
+</div>

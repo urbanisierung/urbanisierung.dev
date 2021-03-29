@@ -31,14 +31,17 @@ import { SideprojectComponent } from './components/sideproject/sideproject.compo
 import { SideprojectsComponent } from './components/sideprojects/sideprojects.component';
 import { NewsComponent } from './components/news/news.component';
 import { NewsItemComponent } from './components/news/news-item/news-item.component';
-import { UsesComponent } from './components/uses/uses.component'
+import { UsesComponent } from './components/uses/uses.component';
+import { BooksComponent } from './components/books/books.component';
+import { BookComponent } from './components/books/book/book.component';
+import { AboutComponent } from './components/about/about.component'
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
 }
 
 @NgModule({
-  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent, HeaderMenuItemComponent, JobCardComponent, JobDescriptionComponent, TechTagComponent, ContactComponent, SideprojectComponent, SideprojectsComponent, NewsComponent, NewsItemComponent, UsesComponent],
+  declarations: [AppComponent, LoadingComponent, HomeComponent, HeaderComponent, SocialIconComponent, SocialComponent, ArticleComponent, ArticlesComponent, IntroComponent, JobComponent, JobsComponent, HeaderMenuItemComponent, JobCardComponent, JobDescriptionComponent, TechTagComponent, ContactComponent, SideprojectComponent, SideprojectsComponent, NewsComponent, NewsItemComponent, UsesComponent, BooksComponent, BookComponent, AboutComponent],
   imports: [
     CommonModule,
     FormsModule,

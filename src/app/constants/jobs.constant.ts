@@ -26,6 +26,7 @@ export const JOBS: Job[] = [
       Tech.EXPRESS,
       Tech.KUBERNETES,
       Tech.NODEJS,
+      Tech.BPMN,
     ],
   },
   {
