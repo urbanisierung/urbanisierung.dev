@@ -6,4 +6,5 @@ export enum Route {
   SIDEPROJECTS = 'sideprojects',
   CONFERENCE_TALKS = 'conferencetalks',
   ABOUT = 'about',
+  ART = 'art',
 }

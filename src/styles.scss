@@ -59,6 +59,10 @@
     U+FEFF, U+FFFD;
 }
 
+// @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Signika:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Amiri:ital,wght@1,700&family=Signika:wght@700&display=swap');
+
 /* ~~~~~~~~~~~~ VARIABLES: COLORS, FONT, ... ~~~~~~~~~~~~ */
 
 // cta: #F1AE7B
@@ -67,7 +71,7 @@
 
 $highlight: #fff591;
 // $my-primary: #106ed0;
-$my-primary: #dacdff;
+$my-primary: #a70267;
 
 $my-item-hover: #f8f8f8;
 $my-bg-color: #fefaf6;
@@ -81,8 +85,10 @@ $menu-item-active-background-color: $my-primary;
 $navbar-background-color: $my-bg-color;
 
 $primary: $my-primary;
+$link: $my-primary;
 $text: #292929;
-$family-sans-serif: 'Ubuntu', sans-serif;
+// $family-sans-serif: 'Ubuntu', sans-serif;
+$family-sans-serif: 'Alef', sans-serif;
 
 /* ~~~~~~~~~~~~ EXTERNAL IMPORTS ~~~~~~~~~~~~ */
 
@@ -93,6 +99,19 @@ $family-sans-serif: 'Ubuntu', sans-serif;
 html {
   background-color: $my-bg-color;
   font-size: 110%;
+  line-height: 110%;
+}
+
+p {
+  line-height: 150%;
+}
+
+h1 {
+  font-family: 'Signika', sans-serif;
+}
+
+h2 {
+  font-family: 'Amiri', serif;
 }
 
 /* custom scrollbar */
@@ -115,7 +134,116 @@ html {
   background-color: #a8bbbf;
 }
 
+/* ~~~~~~~~~~~~ CSS LINK ~~~~~~~~~~~~ */
+
+.r-link {
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-link[href] {
+  color: var(--rLinkColor) !important;
+  text-decoration: var(--rLinkTextDecoration, none) !important;
+}
+
+.text-underlined {
+  /*
+        1. I use pixels units because others units (em, rem, vw, vh, etc) can
+        lead to the mistake of displaying a circumcised line
+    */
+
+  --uiTextUnderlinedLineHeight: var(--textUnderlinedLineHeight, 2px); /* 1 */
+  --uiTextUnderlinedLineGap: var(--textUnderlinedLineGap, 0.5rem);
+  --uiTextUnderlinedPaddingBottom: calc(
+    var(--uiTextUnderlinedLineHeight) + var(--uiTextUnderlinedLineGap)
+  );
+
+  padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
+  position: var(--textUnderlinedPosition, relative) !important;
+  z-index: var(--textUnderlinedZindex, 1) !important;
+}
+
+.text-underlined::after {
+  content: '';
+  width: var(--textUnderlinedLineWidht, 100%) !important;
+  height: var(--uiTextUnderlinedLineHeight) !important;
+  background-image: var(
+    --textUnderlinedBackgroundImage,
+    linear-gradient(
+      to top,
+      var(--textUnderlinedLineColor, currentColor) 30%,
+      rgba(0, 0, 0, 0) 45%
+    )
+  ) !important;
+
+  position: absolute;
+  left: var(--textUnderlinedLineLeft, 0) !important;
+  bottom: var(--textUnderlinedLineBottom, 0) !important;
+  z-index: var(--textUnderlinedLineZindex, -1) !important;
+}
+
+/*
+=====
+CORE
+=====
+*/
+
+.link {
+  --textUnderlinedLineHeight: 100%;
+  --textUnderlinedLineGap: 0;
+  --textUnderlinedLineColor: #fed330;
+
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.link::after {
+  will-change: width;
+  transition: width 0.1s ease-out;
+  transform: rotate(-2deg);
+  transform-origin: left bottom;
+}
+
+.link:hover {
+  --textUnderlinedLineWidht: 0;
+}
+
+.link:hover::after {
+  transition-duration: 0.15s;
+}
+
+/*
+* These styles for text decoration. The demo will be work without it
+*/
+
+.link:focus {
+  outline: 2px solid #fed330;
+  outline-offset: 0.5rem;
+}
+
 /* ~~~~~~~~~~~~ CSS CLASSES ~~~~~~~~~~~~ */
+
+.myimage {
+  width: 70%;
+}
+
+.myimage-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.has-no-scroll {
+  overflow-y: hidden;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+.header-item {
+  letter-spacing: 2px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 .my-main {
   margin-top: 5em;
@@ -139,6 +267,14 @@ html {
 
 .mytitle {
   text-align: center;
+}
+
+.mytitle1 {
+  font-size: 7em;
+}
+
+.mytitle2 {
+  font-size: 4em;
 }
 
 .is-share-wrapper {
@@ -227,6 +363,14 @@ html {
   }
   .intro-subtitle {
     font-size: 150%;
+  }
+
+  .mytitle1 {
+    font-size: 5em;
+  }
+
+  .mytitle2 {
+    font-size: 2em;
   }
 }
 

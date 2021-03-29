@@ -19,6 +19,10 @@ export const HEADER_ITEMS: HeaderItem[] = [
     route: Route.SIDEPROJECTS,
   },
   {
+    name: 'Art',
+    route: Route.ART,
+  },
+  {
     name: 'Uses',
     route: Route.USES,
   },
