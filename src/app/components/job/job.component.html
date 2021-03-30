@@ -1,0 +1,36 @@
+<!-- BIG SCREEN -->
+<div
+  class="columns is-vcentered"
+  *ngIf="!screensizeService.isSmallWidth && !screensizeService.isMediumWidth"
+>
+  <div class="column">
+    <app-job-card
+      *ngIf="jobWithAlignment.left"
+      [job]="jobWithAlignment.job"
+    ></app-job-card>
+    <app-job-description
+      *ngIf="!jobWithAlignment.left"
+      [job]="jobWithAlignment.job"
+    ></app-job-description>
+  </div>
+  <div class="column">
+    <app-job-card
+      *ngIf="!jobWithAlignment.left"
+      [job]="jobWithAlignment.job"
+    ></app-job-card>
+    <app-job-description
+      *ngIf="jobWithAlignment.left"
+      [job]="jobWithAlignment.job"
+      [left]="jobWithAlignment.left"
+    ></app-job-description>
+  </div>
+</div>
+<!-- SMALL OR MEDIUM SCREEN -->
+<div
+  class="columns is-vcentered"
+  *ngIf="screensizeService.isSmallWidth || screensizeService.isMediumWidth"
+>
+  <div class="column">
+    <app-job-card [job]="jobWithAlignment.job"></app-job-card>
+  </div>
+</div>

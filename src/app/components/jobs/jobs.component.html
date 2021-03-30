@@ -1,0 +1,16 @@
+<h1 class="title mytitle mytitle1">Work</h1>
+<h2 class="subtitle mytitle">Filter by tags</h2>
+<div class="is-centered my-container">
+  <app-tech-tag
+    *ngFor="let tag of skills"
+    [tag]="tag"
+    [selection]="true"
+    (select)="changeSkills($event)"
+  ></app-tech-tag>
+</div>
+<div style="margin-top: 2em;">
+  <app-job
+    [jobWithAlignment]="jobWithAlignment"
+    *ngFor="let jobWithAlignment of filteredJobsWithAlignment"
+  ></app-job>
+</div>

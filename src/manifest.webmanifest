@@ -1,0 +1,17 @@
+{
+  "name": "urbanisierung",
+  "short_name": "urbanisierung",
+  "theme_color": "#e35f5d",
+  "background_color": "#f8f8f8",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

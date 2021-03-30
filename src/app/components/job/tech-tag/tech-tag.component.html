@@ -1,0 +1,20 @@
+<span *ngIf="!selection">
+  <span *ngIf="getUrl()">
+    <a href="{{ getUrl() }}" target="_blank">
+      <span class="tag is-light" style="margin-right: 0.2em;">{{ tag }}</span>
+    </a>
+  </span>
+  <span *ngIf="!getUrl()">
+    <span class="tag is-light" style="margin-right: 0.2em;">{{ tag }}</span>
+  </span>
+</span>
+<span *ngIf="selection">
+  <span
+    class="tag is-clickable"
+    (click)="toggleSelection()"
+    [class.is-light]="!selected"
+    [class.is-link]="selected"
+    style="margin-right: 0.2em;"
+    >{{ tag }}</span
+  >
+</span>

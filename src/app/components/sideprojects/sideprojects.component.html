@@ -1,0 +1,13 @@
+<h1 class="title mytitle mytitle1">Projects</h1>
+<h2 class="subtitle mytitle">Featured</h2>
+<div class="columns is-multiline" style="text-align: center;">
+  <div class="column is-4" *ngFor="let sideproject of getFeatured(true)">
+    <app-sideproject [sideproject]="sideproject"></app-sideproject>
+  </div>
+</div>
+<h2 class="subtitle mytitle">More</h2>
+<div class="columns is-multiline" style="text-align: center;">
+  <div class="column is-4" *ngFor="let sideproject of getFeatured(false)">
+    <app-sideproject [sideproject]="sideproject"></app-sideproject>
+  </div>
+</div>

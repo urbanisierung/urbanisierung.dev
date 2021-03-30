@@ -1,0 +1,403 @@
+/* ~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~ */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcg72j00.woff2)
+    format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKew72j00.woff2)
+    format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcw72j00.woff2)
+    format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKfA72j00.woff2)
+    format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcQ72j00.woff2)
+    format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKfw72.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Signika:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Amiri:ital,wght@1,700&family=Signika:wght@700&display=swap');
+
+/* ~~~~~~~~~~~~ VARIABLES: COLORS, FONT, ... ~~~~~~~~~~~~ */
+
+// cta: #F1AE7B
+// selected: #C84F5E
+// hover: #C66E80
+
+$highlight: #fff591;
+// $my-primary: #106ed0;
+$my-primary: #a70267;
+
+$my-item-hover: #f8f8f8;
+$my-bg-color: #fefaf6;
+$my-dark-grey: #dfdfe2;
+$my-blue: #61b9f3;
+$my-grey: #a4a4ab;
+
+$sidebarwidth: 50px;
+
+$menu-item-active-background-color: $my-primary;
+$navbar-background-color: $my-bg-color;
+
+$primary: $my-primary;
+$link: $my-primary;
+$text: #292929;
+// $family-sans-serif: 'Ubuntu', sans-serif;
+$family-sans-serif: 'Alef', sans-serif;
+
+/* ~~~~~~~~~~~~ EXTERNAL IMPORTS ~~~~~~~~~~~~ */
+
+@import '~bulma/bulma.sass';
+
+/* ~~~~~~~~~~~~ CSS ELEMENTS ~~~~~~~~~~~~ */
+
+html {
+  background-color: $my-bg-color;
+  font-size: 110%;
+  line-height: 110%;
+}
+
+p {
+  line-height: 150%;
+}
+
+h1 {
+  font-family: 'Signika', sans-serif;
+}
+
+h2 {
+  font-family: 'Amiri', serif;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* ~~~~~~~~~~~~ CSS LINK ~~~~~~~~~~~~ */
+
+.r-link {
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-link[href] {
+  color: var(--rLinkColor) !important;
+  text-decoration: var(--rLinkTextDecoration, none) !important;
+}
+
+.text-underlined {
+  /*
+        1. I use pixels units because others units (em, rem, vw, vh, etc) can
+        lead to the mistake of displaying a circumcised line
+    */
+
+  --uiTextUnderlinedLineHeight: var(--textUnderlinedLineHeight, 2px); /* 1 */
+  --uiTextUnderlinedLineGap: var(--textUnderlinedLineGap, 0.5rem);
+  --uiTextUnderlinedPaddingBottom: calc(
+    var(--uiTextUnderlinedLineHeight) + var(--uiTextUnderlinedLineGap)
+  );
+
+  padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
+  position: var(--textUnderlinedPosition, relative) !important;
+  z-index: var(--textUnderlinedZindex, 1) !important;
+}
+
+.text-underlined::after {
+  content: '';
+  width: var(--textUnderlinedLineWidht, 100%) !important;
+  height: var(--uiTextUnderlinedLineHeight) !important;
+  background-image: var(
+    --textUnderlinedBackgroundImage,
+    linear-gradient(
+      to top,
+      var(--textUnderlinedLineColor, currentColor) 30%,
+      rgba(0, 0, 0, 0) 45%
+    )
+  ) !important;
+
+  position: absolute;
+  left: var(--textUnderlinedLineLeft, 0) !important;
+  bottom: var(--textUnderlinedLineBottom, 0) !important;
+  z-index: var(--textUnderlinedLineZindex, -1) !important;
+}
+
+/*
+=====
+CORE
+=====
+*/
+
+.link {
+  --textUnderlinedLineHeight: 100%;
+  --textUnderlinedLineGap: 0;
+  --textUnderlinedLineColor: #fed330;
+
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.link::after {
+  will-change: width;
+  transition: width 0.1s ease-out;
+  transform: rotate(-2deg);
+  transform-origin: left bottom;
+}
+
+.link:hover {
+  --textUnderlinedLineWidht: 0;
+}
+
+.link:hover::after {
+  transition-duration: 0.15s;
+}
+
+/*
+* These styles for text decoration. The demo will be work without it
+*/
+
+.link:focus {
+  outline: 2px solid #fed330;
+  outline-offset: 0.5rem;
+}
+
+/* ~~~~~~~~~~~~ CSS CLASSES ~~~~~~~~~~~~ */
+
+.myimage {
+  width: 70%;
+}
+
+.myimage-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.has-no-scroll {
+  overflow-y: hidden;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+.header-item {
+  letter-spacing: 2px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.my-main {
+  margin-top: 5em;
+}
+
+.my-card {
+  background: rgb(228, 198, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 198, 226, 1) 0%,
+    rgba(214, 198, 206, 1) 36%,
+    rgba(235, 198, 116, 1) 100%
+  );
+  border-radius: 2em;
+}
+
+.my-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.mytitle {
+  text-align: center;
+}
+
+.mytitle1 {
+  font-size: 7em;
+}
+
+.mytitle2 {
+  font-size: 4em;
+}
+
+.is-share-wrapper {
+  margin: 0.2em;
+  text-align: center;
+}
+
+.is-share-icon {
+  color: $grey-light;
+  margin: auto;
+}
+
+.is-map-icon {
+  color: $my-grey;
+  margin-left: 0.4em;
+  margin-right: 0.2em;
+}
+
+.is-share-icon:hover {
+  color: $primary;
+  cursor: pointer;
+}
+
+.sideproject-image {
+  max-width: 500px;
+}
+
+.intro-image {
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(235, 198, 116, 1);
+  box-shadow: 5px 5px 15px 5px rgba(235, 198, 116, 1);
+}
+
+.intro-title {
+  font-size: 500%;
+  line-height: 95%;
+}
+.intro-subtitle {
+  font-size: 150%;
+  margin-top: 0.5em;
+}
+
+/* ============ GRID ============ */
+
+.my-grid {
+  display: grid;
+  grid-template-columns: [main] 100%;
+  grid-template-rows: [header] $navbar-height [main] auto;
+  width: 100vw;
+  height: 99vh;
+  overflow-y: hidden;
+}
+
+.is-header {
+  grid-column: main;
+  grid-row: header;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-grid {
+    display: grid;
+    grid-template-columns: [main] 100%;
+    grid-template-rows: [header] $navbar-height [main] auto;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .is-header {
+    grid-column: main;
+    grid-row: header;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    overflow-y: hidden;
+  }
+
+  .intro-title {
+    font-size: 300%;
+  }
+  .intro-subtitle {
+    font-size: 150%;
+  }
+
+  .mytitle1 {
+    font-size: 5em;
+  }
+
+  .mytitle2 {
+    font-size: 2em;
+  }
+}
+
+.is-main {
+  grid-column: main;
+  grid-row: main;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.is-social {
+  grid-column: social;
+  grid-row: main;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+}
+
+.is-contact {
+  grid-column: contact;
+  grid-row: main;
+  width: 100%;
+  // align-self: center;
+  // justify-self: center;
+  margin: auto;
+}
+
+/* ============ GRID ============ */

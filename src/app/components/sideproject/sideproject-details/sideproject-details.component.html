@@ -1,0 +1,24 @@
+<div class="my-container is-centered">
+  <span *ngIf="project">
+    <h1 class="title mytitle1">{{ project.name }}</h1>
+    <p>{{ project.description }}</p>
+    <p style="margin-bottom: 1em;">
+      <app-tech-tag *ngFor="let tag of project.tech" [tag]="tag"></app-tech-tag>
+    </p>
+    <div>
+      <a
+        href="{{ url.url }}"
+        target="_blank"
+        class="r-link link text-underlined"
+        *ngFor="let url of project.urls"
+        >{{ url.socialProvider }}</a
+      >
+    </div>
+    <div>
+      <img [src]="project.image" [alt]="project.name" class="myimage" />
+    </div>
+  </span>
+  <span *ngIf="!project">
+    Sorry, nothing found...
+  </span>
+</div>
