@@ -31,4 +31,5 @@ export enum Tech {
   SOLIDITY = 'Solidity',
   ETHETERUM = 'Ethereum',
   ELECTRON = 'Electron',
+  STRIPE = 'Stripe',
 }

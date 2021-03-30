@@ -27,6 +27,7 @@ export const JOBS: Job[] = [
       Tech.KUBERNETES,
       Tech.NODEJS,
       Tech.BPMN,
+      Tech.GIT,
     ],
   },
   {
@@ -43,7 +44,7 @@ export const JOBS: Job[] = [
     duration: '1 year, 10 months',
     description: [
       `SICK is one of the leading companies in sensor technology. My goal was to <strong>build up a scalable DevOps organization</strong> at a new location for the development and expansion of the cloud offering. As a bridge between product management and R&D, I introduced <strong>agile and lean techniques</strong> to improve the software development process.`,
-      `During my time at SICK, services like the <a href="https://apppool.cloud.sick.com/" target="_blank">AppPool</a> or the <a href="https://assethub.cloud.sick.com/" target="_blank">AssetHub</a> were created.`,
+      `The team was able to successfully use the techniques to effectively and efficiently create services such as the <a href="https://apppool.cloud.sick.com/" target="_blank">AppPool</a> or the <a href="https://assethub.cloud.sick.com/" target="_blank">AssetHub</a>.`,
     ],
     tech: [
       Tech.AWS,
@@ -53,6 +54,7 @@ export const JOBS: Job[] = [
       Tech.ANGULAR,
       Tech.NODEJS,
       Tech.DEVOPS,
+      Tech.GIT,
     ],
   },
   {

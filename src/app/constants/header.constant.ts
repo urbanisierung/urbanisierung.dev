@@ -7,7 +7,7 @@ export const HEADER_ITEMS: HeaderItem[] = [
     route: Route.ABOUT,
   },
   {
-    name: 'Work',
+    name: 'Experience',
     route: Route.EXPERIENCE,
   },
   {

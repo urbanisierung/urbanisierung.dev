@@ -4,6 +4,7 @@ import { Tech } from './tech.enum'
 
 export const SIDEPROJECTS: SideProject[] = [
   {
+    id: 'find-the-next-victom',
     name: 'Find the next victim',
     description:
       'You are always looking for a volunteer? As the next chair for a meeting, as the next at the standup, ...? This miniapp helps you. Just publish a Google Spreadsheet with all participants and you are ready to go.',
@@ -17,8 +18,10 @@ export const SIDEPROJECTS: SideProject[] = [
     startTimestamp: 1615420800000,
     year: 2021,
     tech: [Tech.TYPESCRIPT, Tech.ANGULAR, Tech.NETLIFY],
+    featured: false,
   },
   {
+    id: 'websiteshot',
     name: 'Websiteshot',
     description:
       'Never spend time again to create awesome screenshots of your websites.',
@@ -48,9 +51,12 @@ export const SIDEPROJECTS: SideProject[] = [
       Tech.NEWRELIC,
       Tech.NETLIFY,
       Tech.DOCUSAURUS,
+      Tech.STRIPE,
     ],
+    featured: true,
   },
   {
+    id: 'restzeebe',
     name: 'Restzeebe',
     description:
       'If you want to try out Camunda Clouds Workflow Engine without implementing one line of code Restzeebe will help you. Register Service Workers, send messages or start new instances from your browser.',
@@ -73,8 +79,10 @@ export const SIDEPROJECTS: SideProject[] = [
       Tech.NETLIFY,
       Tech.DOCUSAURUS,
     ],
+    featured: true,
   },
   {
+    id: 'sharu',
     name: 'Sharu',
     description:
       'Decentralized and encrypted filesharing via IPFS and permission and rights management via an Ethereum contract.',
@@ -99,5 +107,6 @@ export const SIDEPROJECTS: SideProject[] = [
       Tech.ANGULAR,
       Tech.NODEJS,
     ],
+    featured: true,
   },
 ]

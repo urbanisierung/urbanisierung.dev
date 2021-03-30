@@ -82,6 +82,8 @@ export class TechTagComponent {
         return `https://www.electronjs.org/`
       case Tech.ETHETERUM:
         return `https://ethereum.org/`
+      case Tech.STRIPE:
+        return `https://stripe.com/`
       case Tech.SVN:
         return `https://subversion.apache.org/`
       case Tech.TELEMATICS:

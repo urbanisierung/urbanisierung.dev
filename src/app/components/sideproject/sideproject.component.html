@@ -1,28 +1,5 @@
-<div class="box card" style="margin-bottom: 1em;">
-  <div class="card-image">
-    <figure class="image">
-      <img [src]="sideproject.image" alt="{{ sideproject.name }}" />
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <p class="title is-4">{{ sideproject.name }}</p>
-      </div>
-    </div>
-
-    <div class="content">
-      <p style="margin-bottom: 1em;">
-        <app-tech-tag
-          *ngFor="let tag of sideproject.tech"
-          [tag]="tag"
-        ></app-tech-tag>
-      </p>
-      <p>{{ sideproject.description }}</p>
-      <app-social-icon
-        *ngFor="let socialConnect of sideproject.urls"
-        [socialConnect]="socialConnect"
-      ></app-social-icon>
-    </div>
+<div class="parent is-clickable" (click)="jump()">
+  <div class="child" [style.background-image]="getBgImage()">
+    <p class="project-text">{{ sideproject.name }}</p>
   </div>
 </div>

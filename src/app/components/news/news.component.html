@@ -7,7 +7,7 @@
         [newsevent]="newsevent"
       ></app-news-item>
     </span>
-    <h2 class="subtitle">Recent</h2>
+    <h2 class="subtitle" style="margin-top: 1em;">Recent</h2>
     <app-news-item
       *ngFor="let newsevent of newsEventService.getLatestNews()"
       [newsevent]="newsevent"

@@ -10,4 +10,9 @@ export class SideprojectsComponent {
   sideprojects = SIDEPROJECTS
 
   constructor() {}
+
+  // eslint-disable-next-line class-methods-use-this
+  public getFeatured(featured: boolean) {
+    return SIDEPROJECTS.filter((project) => project.featured === featured)
+  }
 }

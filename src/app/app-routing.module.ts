@@ -5,6 +5,7 @@ import { ArtComponent } from './components/art/art.component'
 import { ArticlesComponent } from './components/articles/articles.component'
 import { HomeComponent } from './components/home/home.component'
 import { JobsComponent } from './components/jobs/jobs.component'
+import { SideprojectDetailsComponent } from './components/sideproject/sideproject-details/sideproject-details.component'
 import { SideprojectsComponent } from './components/sideprojects/sideprojects.component'
 import { UsesComponent } from './components/uses/uses.component'
 import { Route } from './constants/route.enum'
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: Route.SIDEPROJECTS,
     component: SideprojectsComponent,
+  },
+  {
+    path: `${Route.SIDEPROJECTS}/:projectId`,
+    component: SideprojectDetailsComponent,
   },
   {
     path: Route.USES,
