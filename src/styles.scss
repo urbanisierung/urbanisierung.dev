@@ -181,6 +181,12 @@ CORE
 
 /* ~~~~~~~~~~~~ CSS CLASSES ~~~~~~~~~~~~ */
 
+.rounded-border {
+  border-color: $primary;
+  border-style: solid;
+  border-radius: 10px;
+}
+
 .myimage {
   width: 70%;
 }
