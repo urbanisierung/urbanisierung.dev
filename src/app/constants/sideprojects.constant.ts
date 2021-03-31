@@ -8,7 +8,7 @@ export const SIDEPROJECTS: SideProject[] = [
     name: 'Find the next victim',
     description:
       'You are always looking for a volunteer? As the next chair for a meeting, as the next at the standup, ...? This miniapp helps you. Just publish a Google Spreadsheet with all participants and you are ready to go.',
-    image: 'assets/img/projects/findthenextvictim.gif',
+    image: 'assets/img/projects/findthenextvictim.webp',
     urls: [
       {
         socialProvider: SocialProvider.WEBSITE,
@@ -25,7 +25,7 @@ export const SIDEPROJECTS: SideProject[] = [
     name: 'Websiteshot',
     description:
       'Never spend time again to create awesome screenshots of your websites.',
-    image: 'assets/img/projects/websiteshot.png',
+    image: 'assets/img/projects/websiteshot.webp',
     urls: [
       {
         socialProvider: SocialProvider.GITHUB,
@@ -60,7 +60,7 @@ export const SIDEPROJECTS: SideProject[] = [
     name: 'Restzeebe',
     description:
       'If you want to try out Camunda Clouds Workflow Engine without implementing one line of code Restzeebe will help you. Register Service Workers, send messages or start new instances from your browser.',
-    image: 'assets/img/projects/restzeebe.png',
+    image: 'assets/img/projects/restzeebe.webp',
     urls: [
       {
         socialProvider: SocialProvider.WEBSITE,
@@ -86,7 +86,7 @@ export const SIDEPROJECTS: SideProject[] = [
     name: 'Sharu',
     description:
       'Decentralized and encrypted filesharing via IPFS and permission and rights management via an Ethereum contract.',
-    image: 'assets/img/projects/sharu.gif',
+    image: 'assets/img/projects/sharu.webp',
     urls: [
       {
         socialProvider: SocialProvider.GITHUB,
