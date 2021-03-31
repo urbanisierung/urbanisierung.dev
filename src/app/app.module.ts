@@ -2,7 +2,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling'
 import { CommonModule } from '@angular/common'
 import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ServiceWorkerModule } from '@angular/service-worker'
@@ -69,12 +68,9 @@ import { UsesComponent } from './components/uses/uses.component'
   ],
   imports: [
     CommonModule,
-    FormsModule,
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
     ScrollingModule,
     AppRoutingModule,
     FontAwesomeModule,
