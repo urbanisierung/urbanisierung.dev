@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 import { HEADER_ITEMS } from '../../constants/header.constant'
 import { SOCIAL_CONNECT } from '../../constants/SocialConnects.constant'
 import { HeaderItem } from '../../types/HeaderItem.type'
@@ -14,9 +15,18 @@ export class HeaderComponent {
 
   opened: boolean = false
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   toggleMenu() {
     this.opened = !this.opened
+  }
+
+  closeMenu() {
+    this.opened = false
+  }
+
+  navigate(item: HeaderItem) {
+    this.router.navigate([item.route])
+    this.opened = false
   }
 }
