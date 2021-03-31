@@ -12,8 +12,10 @@
   <span
     class="tag is-clickable"
     (click)="toggleSelection()"
+    (mouseover)="over = true"
+    (mouseout)="over = false"
     [class.is-light]="!selected"
-    [class.is-link]="selected"
+    [class.is-link]="selected || over"
     style="margin-right: 0.2em;"
     >{{ tag }}</span
   >

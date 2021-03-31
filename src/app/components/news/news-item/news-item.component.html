@@ -1,13 +1,5 @@
-<div class="container columns is-mobile">
-  <div
-    class="column"
-    [class.is-2]="
-      screensizeService.isSmallWidth || screensizeService.isMediumWidth
-    "
-    [class.is-1]="
-      !screensizeService.isSmallWidth && !screensizeService.isMediumWidth
-    "
-  >
+<article class="media">
+  <figure class="media-left">
     <a
       href="{{ newsevent.url }}"
       rel="noopener"
@@ -20,20 +12,22 @@
         aria-hidden="true"
       ></fa-icon>
     </a>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        {{ newsevent.title }}<br />
+        <span class="is-size-7">
+          {{ newsevent.timestamp | date: 'MMMM d, y' }},
+          <a
+            href="{{ newsevent.url }}"
+            rel="noopener"
+            target="_blank"
+            class="r-link link text-underlined"
+            >Show</a
+          >
+        </span>
+      </p>
+    </div>
   </div>
-  <div class="column">
-    <p>
-      {{ newsevent.title }}
-    </p>
-    <p class="is-size-7">
-      {{ newsevent.timestamp | date: 'MMMM d, y' }},
-      <a
-        href="{{ newsevent.url }}"
-        rel="noopener"
-        target="_blank"
-        class="r-link link text-underlined"
-        >Show</a
-      >
-    </p>
-  </div>
-</div>
+</article>

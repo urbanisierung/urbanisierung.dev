@@ -8,7 +8,7 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/img/logo.png",
+      "src": "assets/img/logo.webp",
       "sizes": "60x60",
       "type": "image/png",
       "purpose": "maskable any"
