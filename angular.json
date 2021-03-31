@@ -65,7 +65,7 @@
                   "maximumError": "10kb"
                 }
               ],
-              "serviceWorker": false,
+              "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
             },
             "integration": {
@@ -95,7 +95,7 @@
                   "maximumError": "10kb"
                 }
               ],
-              "serviceWorker": false,
+              "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
             }
           }
