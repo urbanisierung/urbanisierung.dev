@@ -5,7 +5,9 @@ import { NgModule } from '@angular/core'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ServiceWorkerModule } from '@angular/service-worker'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { environment } from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { AboutComponent } from './components/about/about.component'
@@ -76,9 +78,9 @@ import { UsesComponent } from './components/uses/uses.component'
     ScrollingModule,
     AppRoutingModule,
     FontAwesomeModule,
-    // ServiceWorkerModule.register('ngsw-worker.js', {
-    //   enabled: environment.integration || environment.production,
-    // }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.integration || environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
