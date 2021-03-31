@@ -14,6 +14,7 @@ export class TechTagComponent {
   selection: boolean = false
 
   selected: boolean = false
+  over: boolean = false
 
   @Output() select: EventEmitter<Tech> = new EventEmitter()
 
