@@ -34,7 +34,8 @@ import { SideprojectComponent } from './components/sideproject/sideproject.compo
 import { SideprojectsComponent } from './components/sideprojects/sideprojects.component'
 import { SocialIconComponent } from './components/social-icon/social-icon.component'
 import { SocialComponent } from './components/social/social.component'
-import { UsesComponent } from './components/uses/uses.component'
+import { UsesComponent } from './components/uses/uses.component';
+import { ResumeComponent } from './components/resume/resume.component'
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { UsesComponent } from './components/uses/uses.component'
     ArtComponent,
     ArtItemComponent,
     SideprojectDetailsComponent,
+    ResumeComponent,
   ],
   imports: [
     CommonModule,

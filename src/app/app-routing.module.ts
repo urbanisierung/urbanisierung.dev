@@ -5,6 +5,7 @@ import { ArtComponent } from './components/art/art.component'
 import { ArticlesComponent } from './components/articles/articles.component'
 import { HomeComponent } from './components/home/home.component'
 import { JobsComponent } from './components/jobs/jobs.component'
+import { ResumeComponent } from './components/resume/resume.component'
 import { SideprojectDetailsComponent } from './components/sideproject/sideproject-details/sideproject-details.component'
 import { SideprojectsComponent } from './components/sideprojects/sideprojects.component'
 import { UsesComponent } from './components/uses/uses.component'
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: Route.ART,
     component: ArtComponent,
+  },
+  {
+    path: Route.RESUME,
+    component: ResumeComponent,
   },
 ]
 

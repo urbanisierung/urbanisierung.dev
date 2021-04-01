@@ -34,10 +34,19 @@
       </a>
     </div>
     <div class="navbar-end">
-      <app-social-icon
-        *ngFor="let socialConnect of socialConnects"
-        [socialConnect]="socialConnect"
-      ></app-social-icon>
+      <div class="navbar-item">
+        <app-social-icon
+          [socialConnect]="socialConnect"
+          *ngFor="let socialConnect of socialConnects"
+        ></app-social-icon>
+      </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary is-outlined" href="{{ resume }}">
+            <strong>Resume</strong>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

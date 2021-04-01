@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { Router } from '@angular/router'
+import { RESUME_PDF } from '../../constants/resume.constant'
 import { HEADER_ITEMS } from '../../constants/header.constant'
 import { SOCIAL_CONNECT } from '../../constants/SocialConnects.constant'
 import { HeaderItem } from '../../types/HeaderItem.type'
@@ -12,6 +13,7 @@ import { HeaderItem } from '../../types/HeaderItem.type'
 export class HeaderComponent {
   public items: HeaderItem[] = HEADER_ITEMS
   public socialConnects = SOCIAL_CONNECT
+  public resume = RESUME_PDF
 
   opened: boolean = false
 
