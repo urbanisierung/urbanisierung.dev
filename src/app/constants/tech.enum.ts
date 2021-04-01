@@ -4,6 +4,7 @@ export enum Tech {
   ANGULAR = 'Angular',
   EXPRESS = 'Express',
   KUBERNETES = 'Kubernetes',
+  CANVAS = 'Canvas',
   NODEJS = 'NodeJS',
   AWS = 'AWS',
   SERVERLESS = 'Serverless',

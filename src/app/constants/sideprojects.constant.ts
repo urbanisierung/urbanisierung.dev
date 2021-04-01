@@ -111,4 +111,62 @@ export const SIDEPROJECTS: SideProject[] = [
     ],
     featured: true,
   },
+  {
+    id: 'generative-arts',
+    name: 'Generative Arts',
+    description:
+      'This is a Github project I started with a colleague. We want to try out different techniques in Generative Art. We are also creating assets that we will use for a conference talk to generate art from a BPMN process using a BPMN process.',
+    image: 'assets/img/projects/generativeart.webp',
+    urls: [
+      {
+        socialProvider: SocialProvider.GITHUB,
+        url: 'https://github.com/generative-arts',
+      },
+    ],
+    startTimestamp: 1610236800000,
+    year: 2021,
+    tech: [
+      Tech.TYPESCRIPT,
+      Tech.ANGULAR,
+      Tech.NETLIFY,
+      Tech.FIREBASE,
+      Tech.NODEJS,
+      Tech.CANVAS,
+      Tech.CAMUNDA,
+    ],
+    featured: false,
+  },
+  {
+    id: 'zeebetron',
+    name: 'Zeebetron',
+    description:
+      'A small Electron app that allows you to easily manage different Zeebe profiles. This makes it quite easy to communicate between different Zeebe brokers.',
+    image: 'assets/img/projects/zeebetron.webp',
+    urls: [
+      {
+        socialProvider: SocialProvider.GITHUB,
+        url: 'https://github.com/urbanisierung/zeebetron',
+      },
+    ],
+    startTimestamp: 1624579200000,
+    year: 2020,
+    tech: [Tech.TYPESCRIPT, Tech.ANGULAR, Tech.ELECTRON, Tech.CAMUNDA],
+    featured: false,
+  },
+  {
+    id: 'dot-calendar',
+    name: 'Dot Calendar',
+    description: `When I first saw a Dot calendar I was super taken with the concept. However, I wanted to customize the calendar to my needs, like using my own colors, storing already known dates, etc. Since I didn't find a service that does everything, I wrote my own little tool. It creates a calendar for a certain year, with a defined color set and with my calendar entries. I have the result produced in a print shop and I am very happy with it.`,
+    image: 'assets/img/projects/dotcalendar.webp',
+    urls: [
+      {
+        socialProvider: SocialProvider.GITHUB,
+        url: 'https://github.com/urbanisierung/dot-calendar',
+      },
+    ],
+    startTimestamp: 1638230400000,
+    year: 2019,
+    tech: [Tech.TYPESCRIPT, Tech.NODEJS, Tech.CANVAS],
+    featured: false,
+  },
 ]
