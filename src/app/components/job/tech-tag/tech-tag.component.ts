@@ -37,6 +37,8 @@ export class TechTagComponent {
         return `https://www.camos.de/en/cpq-solution/camos-cpq`
       case Tech.CAMUNDA:
         return `https://camunda.com/`
+      case Tech.CANVAS:
+        return `https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API`
       case Tech.CLOUDFLARE:
         return `https://www.cloudflare.com/`
       case Tech.DEVOPS:
