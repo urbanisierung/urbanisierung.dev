@@ -7,7 +7,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Camunda',
       url: 'https://www.camunda.com/',
-      logo: 'assets/img/companies/camunda.png',
+      logo: 'assets/img/companies/camunda.webp',
     },
     location: 'Remote',
     fromTimestamp: 1561939200000,
@@ -15,7 +15,7 @@ export const JOBS: Job[] = [
     to: 'present',
     duration: '> 1 year',
     description: [
-      `In a <strong>full remote team</strong>, I have been working on <a href="https://camunda.io" target="_blank">Camunda Cloud</a> since the early hours. It is a <a href="https://camunda.com/products/cloud/workflow-engine/" target="_blank">workflow engine (Zeebe) in the cloud</a>, through which BPMN processes can be executed. My responsibilities are spread <strong>all over the stack</strong>, so I am responsible for both backend and frontend systems.`,
+      `In a <strong>full remote team</strong>, I have been working on <a href="https://camunda.io" target="_blank">Camunda Cloud</a> since the early hours. It is a <a href="https://camunda.com/products/cloud/workflow-engine/" target="_blank">workflow engine (Zeebe) in the cloud</a> that executes BPMN processes. My responsibilities are spread <strong>all over the stack</strong>, so I am responsible for both backend and frontend systems.`,
       `As a team, we work closely with the SRE organization and product teams to build a fully comprehensive solution.`,
     ],
     tech: [
@@ -35,7 +35,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Sick AG',
       url: 'https://www.sick.com/',
-      logo: 'assets/img/companies/sick.png',
+      logo: 'assets/img/companies/sick.webp',
     },
     location: 'Karlsruhe',
     fromTimestamp: 1504224000000,
@@ -62,7 +62,7 @@ export const JOBS: Job[] = [
     company: {
       name: '1&1 IONOS',
       url: 'https://www.ionos.com/',
-      logo: 'assets/img/companies/ionos.png',
+      logo: 'assets/img/companies/ionos.webp',
     },
     location: 'Karlsruhe',
     fromTimestamp: 1414800000000,
@@ -79,7 +79,7 @@ export const JOBS: Job[] = [
     company: {
       name: '1&1 IONOS',
       url: 'https://www.ionos.com/',
-      logo: 'assets/img/companies/ionos.png',
+      logo: 'assets/img/companies/ionos.webp',
     },
     location: 'Karlsruhe',
     fromTimestamp: 1312156800000,
@@ -105,7 +105,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'FZI',
       url: 'https://www.fzi.de/en/home/',
-      logo: 'assets/img/companies/fzi.png',
+      logo: 'assets/img/companies/fzi.webp',
     },
     location: 'Karlsruhe',
     fromTimestamp: 1293840000000,
@@ -123,7 +123,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Camos',
       url: 'https://www.camos.de/en/',
-      logo: 'assets/img/companies/camos.png',
+      logo: 'assets/img/companies/camos.webp',
     },
     location: 'Stuttgart',
     fromTimestamp: 1241136000000,
@@ -140,7 +140,7 @@ export const JOBS: Job[] = [
     company: {
       name: 'Karlsruhe Institute of Technology',
       url: 'https://www.kit.edu/english/',
-      logo: 'assets/img/companies/kit.png',
+      logo: 'assets/img/companies/kit.webp',
     },
     location: 'Karlsruhe',
     fromTimestamp: 1064966400000,
