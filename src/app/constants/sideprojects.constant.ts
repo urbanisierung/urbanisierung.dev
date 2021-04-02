@@ -169,4 +169,20 @@ export const SIDEPROJECTS: SideProject[] = [
     tech: [Tech.TYPESCRIPT, Tech.NODEJS, Tech.CANVAS],
     featured: false,
   },
+  {
+    id: 'fcheat',
+    name: 'fcheat',
+    description: `fcheat is for all who cannot remember all the commands ;) It is a CLI that can be extended with your own commands. It helps you to find your commands quickly.`,
+    image: 'assets/img/projects/fcheat.webp',
+    urls: [
+      {
+        socialProvider: SocialProvider.GITHUB,
+        url: 'https://github.com/urbanisierung/fcheat',
+      },
+    ],
+    startTimestamp: new Date('2019-12-20').getTime(),
+    year: 2019,
+    tech: [Tech.TYPESCRIPT, Tech.NODEJS],
+    featured: false,
+  },
 ]

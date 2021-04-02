@@ -25,4 +25,32 @@ export const ART: ArtItem[] = [
     url: `assets/img/art/crypdentity-6.webp`,
     title: `Crypdentity #6`,
   },
+  {
+    url: `assets/img/art/daftpunk.webp`,
+    title: `daftpunk`,
+  },
+  {
+    url: `assets/img/art/dots.webp`,
+    title: `dots`,
+  },
+  {
+    url: `assets/img/art/freedom.webp`,
+    title: `freedom`,
+  },
+  {
+    url: `assets/img/art/fruits.webp`,
+    title: `fruits`,
+  },
+  {
+    url: `assets/img/art/keyboard.webp`,
+    title: `keyboard`,
+  },
+  {
+    url: `assets/img/art/random-ellipse.webp`,
+    title: `random ellipse`,
+  },
+  {
+    url: `assets/img/art/random-freeform.webp`,
+    title: `random freeform`,
+  },
 ]
