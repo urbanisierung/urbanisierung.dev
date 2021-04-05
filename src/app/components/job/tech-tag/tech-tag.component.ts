@@ -49,6 +49,8 @@ export class TechTagComponent {
         return `https://expressjs.com/`
       case Tech.FIREBASE:
         return `https://firebase.google.com/`
+      case Tech.GATSBY:
+        return `https://www.gatsbyjs.com/`
       case Tech.GCP:
         return `https://cloud.google.com/`
       case Tech.GIT:
