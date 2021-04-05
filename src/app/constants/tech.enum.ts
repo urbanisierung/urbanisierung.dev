@@ -16,6 +16,7 @@ export enum Tech {
   BPMN = 'BPMN',
   CAMUNDA = 'Camunda',
   GIT = 'Git',
+  GATSBY = 'Gatsby',
   JBOSS = 'JBoss',
   CAMOS_CPQ = 'camos CPQ',
   PROLOG = 'Prolog',

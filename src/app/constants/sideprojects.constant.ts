@@ -48,6 +48,7 @@ export const SIDEPROJECTS: SideProject[] = [
       Tech.NODEJS,
       Tech.EXPRESS,
       Tech.FIREBASE,
+      Tech.GATSBY,
       Tech.SERVERLESS,
       Tech.NEWRELIC,
       Tech.NETLIFY,
